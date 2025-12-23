@@ -2,12 +2,14 @@ class Solution(object):
     def mergeAlternately(self, word1, word2):
 
         result = []
-        max_len = max(len(word1), len(word2))
+        word1_len = len(word1)
+        word2_len = len(word2)
+        max_len = max(word1_len, word2_len)
 
         for i in range(max_len):
-            if i < len(word1):
+            if i < word1_len:
                 result.append(word1[i])
-            if i < len(word2):
+            if i < word2_len:
                 result.append(word2[i])
 
         return ''.join(result)

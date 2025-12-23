@@ -4,7 +4,11 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
-        for i in range(1,len(nums)):
-            nums[i] += nums[i-1]
+        result = []
+        total = 0
 
-        return nums
+        for i in range(len(nums)):
+            total += nums[i]
+            result.append(total)
+
+        return result

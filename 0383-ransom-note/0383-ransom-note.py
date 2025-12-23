@@ -1,16 +1,21 @@
 class Solution(object):
     def canConstruct(self, ransomNote, magazine):
-        counts = [0] * 26
+        """
+        :type ransomNote: str
+        :type magazine: str
+        :rtype: bool
+        """
+        magazine_counts = {}
 
         for char in magazine:
-            counts[ord(char) - ord('a')] += 1
+            if char in magazine_counts:
+                magazine_counts[char] += 1 
+            else:
+                magazine_counts[char] = 1
 
         for char in ransomNote:
-            index = ord(char) - ord('a')
-
-            if counts[index] == 0:
+            if char not in magazine_counts or magazine_counts[char] <= 0:
                 return False
-            
-            counts[index] -= 1
-
+            magazine_counts[char] -= 1
+        
         return True

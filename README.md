@@ -24,4 +24,16 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1791-richest-customer-wealth](https://github.com/K-MarkLee/LeetCode-Practice/tree/master/1791-richest-customer-wealth) |
+## Math
+|  |
+| ------- |
+| [0412-fizz-buzz](https://github.com/K-MarkLee/LeetCode-Practice/tree/master/0412-fizz-buzz) |
+## String
+|  |
+| ------- |
+| [0412-fizz-buzz](https://github.com/K-MarkLee/LeetCode-Practice/tree/master/0412-fizz-buzz) |
+## Simulation
+|  |
+| ------- |
+| [0412-fizz-buzz](https://github.com/K-MarkLee/LeetCode-Practice/tree/master/0412-fizz-buzz) |
 <!---LeetCode Topics End-->

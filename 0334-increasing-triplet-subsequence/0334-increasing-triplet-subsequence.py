@@ -1,6 +1,6 @@
 class Solution(object):
     def increasingTriplet(self, nums):
-        first = second = max(nums)
+        first = second = float('inf')
 
         for i in nums:
             if first >= i:

@@ -1,6 +1,6 @@
 class Solution(object):
     def maxOperations(self, nums, k):
-        nums = sorted(nums)
+        nums.sort()
         left = result = 0
         right = len(nums)-1
 

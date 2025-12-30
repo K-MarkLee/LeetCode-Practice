@@ -5,12 +5,11 @@ class Solution(object):
         right = len(nums)-1
 
         while left < right:
-            sum_now = nums[left] + nums[right]
-            if sum_now == k:
+            if nums[left] + nums[right] == k:
                 result += 1
                 left += 1
                 right -= 1
-            elif sum_now < k:
+            elif nums[left] + nums[right] < k:
                 left += 1
             else:
                 right -= 1

@@ -8,7 +8,5 @@ class Solution(object):
                 if nums[left] == 0:
                     k += 1
                 left += 1
-            count = right - left + 1
-            if result < count:
-                result = count
+            result = max(result, right - left + 1)
         return result

@@ -11,5 +11,6 @@ class Solution(object):
                     k += 1
                 left += 1
             
-            max_count = max(max_count , right - left + 1)
+            if max_count < (right - left + 1):
+                max_count = right - left + 1
         return max_count

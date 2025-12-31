@@ -1,6 +1,6 @@
 class Solution(object):
     def longestOnes(self, nums, k):
-        left = max_count = 0
+        left = result = 0
 
         for right in range(len(nums)):
             if nums[right] == 0:
@@ -11,6 +11,6 @@ class Solution(object):
                     k += 1
                 left += 1
             
-            if max_count < (right - left + 1):
-                max_count = right - left + 1
-        return max_count
+            if result < (right - left + 1):
+                result = right - left + 1
+        return result

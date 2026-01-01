@@ -25,12 +25,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1603-running-sum-of-1d-array](https://github.com/K-MarkLee/LeetCode-Practice/tree/master/1603-running-sum-of-1d-array) |
 | [1791-richest-customer-wealth](https://github.com/K-MarkLee/LeetCode-Practice/tree/master/1791-richest-customer-wealth) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/K-MarkLee/LeetCode-Practice/tree/master/1798-max-number-of-k-sum-pairs) |
+| [1833-find-the-highest-altitude](https://github.com/K-MarkLee/LeetCode-Practice/tree/master/1833-find-the-highest-altitude) |
 ## Prefix Sum
 |  |
 | ------- |
 | [0238-product-of-array-except-self](https://github.com/K-MarkLee/LeetCode-Practice/tree/master/0238-product-of-array-except-self) |
 | [1046-max-consecutive-ones-iii](https://github.com/K-MarkLee/LeetCode-Practice/tree/master/1046-max-consecutive-ones-iii) |
 | [1603-running-sum-of-1d-array](https://github.com/K-MarkLee/LeetCode-Practice/tree/master/1603-running-sum-of-1d-array) |
+| [1833-find-the-highest-altitude](https://github.com/K-MarkLee/LeetCode-Practice/tree/master/1833-find-the-highest-altitude) |
 ## Matrix
 |  |
 | ------- |

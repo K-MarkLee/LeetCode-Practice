@@ -3,6 +3,6 @@ class Solution(object):
         set1 = set(nums1)
         set2 = set(nums2)
 
-        result1 = [num for num in set1 if num not in set2]
-        result2 = [num for num in set2 if num not in set1]
+        result1 = list(set1 - set2)
+        result2 = list(set2 - set1)
         return[result1, result2]

@@ -8,9 +8,7 @@ class Solution(object):
                     continue
                 elif result[-1] == -i:
                     result.pop()
-                    break
-                else:
-                    break
+                break
             else:
                 result.append(i)
         return result

@@ -1,13 +1,11 @@
 class RecentCounter(object):
+
     def __init__(self):
         self.q = []
 
     def ping(self, t):
         self.q.append(t)
-
-        while self.q and self.q[0] < t - 3000:
+        while self.q[0] < t - 3000:
             self.q.pop(0)
         
         return len(self.q)
-
-        

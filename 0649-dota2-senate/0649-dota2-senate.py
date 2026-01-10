@@ -9,8 +9,8 @@ class Solution(object):
             else:
                 d.append(i)
         
-        idx= 0
-        while idx< len(r) and idx < len(d):
+        idx = 0
+        while idx < len(r) and idx < len(d):
             if r[idx] < d[idx]:
                 r.append(r[idx] + len(senate))
             else:

@@ -8,14 +8,16 @@ class Solution(object):
                 r.append(i)
             else:
                 d.append(i)
-
-        while r and d:
-            idx_r = r.pop(0)
-            idx_d = d.pop(0)
-
-            if idx_r < idx_d:
-                r.append(idx_r + len(senate))
+        
+        idx_r = 0
+        idx_d = 0
+        while idx_r < len(r) and idx_d < len(d):
+            if r[idx_r] < d[idx_d]:
+                r.append(r[idx_r] + len(senate))
             else:
-                d.append(idx_d + len(senate))
-
-        return "Radiant" if r else "Dire"
+                d.append(d[idx_d] + len(senate))
+            idx_r += 1
+            idx_d += 1
+        
+        return "Radiant" if len(r) > len(d) else "Dire"
+            

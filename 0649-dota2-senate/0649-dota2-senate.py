@@ -9,15 +9,13 @@ class Solution(object):
             else:
                 d.append(i)
         
-        idx_r = 0
-        idx_d = 0
-        while idx_r < len(r) and idx_d < len(d):
-            if r[idx_r] < d[idx_d]:
-                r.append(r[idx_r] + len(senate))
+        idx= 0
+        while idx< len(r) and idx < len(d):
+            if r[idx] < d[idx]:
+                r.append(r[idx] + len(senate))
             else:
-                d.append(d[idx_d] + len(senate))
-            idx_r += 1
-            idx_d += 1
+                d.append(d[idx] + len(senate))
+            idx += 1
         
         return "Radiant" if len(r) > len(d) else "Dire"
             

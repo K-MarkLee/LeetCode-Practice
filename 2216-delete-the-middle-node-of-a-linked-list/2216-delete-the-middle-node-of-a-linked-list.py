@@ -1,17 +1,14 @@
 class Solution(object):
-    def deleteMiddle(self, head):
-        left = head
-        right = head
-        prev = head
-
-        if head is None or head.next is None:
+    def deleteMiddle(self, head) :
+        slow = head
+        fast = head
+        prev = None
+        if head is None or head.next is None :
             return None
-        
-        while right and right.next:
-            prev = left
-            left = left.next
-            right = right.next.next
-        
-        prev.next = left.next
-        
-        return head
+        while fast and fast.next :
+            prev = slow
+            slow = slow.next
+            fast = fast.next.next
+        prev.next = slow.next
+        slow.next = None
+        return  head

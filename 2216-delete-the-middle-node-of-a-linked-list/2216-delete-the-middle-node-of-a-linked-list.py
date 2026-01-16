@@ -4,7 +4,7 @@ class Solution(object):
         right = head
         prev = head
 
-        if not head or not head.next:
+        if head is None or head.next is None:
             return None
         
         while right and right.next:
@@ -13,5 +13,5 @@ class Solution(object):
             right = right.next.next
         
         prev.next = left.next
-
+        left.next = None
         return head

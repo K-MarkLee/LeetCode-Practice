@@ -13,5 +13,5 @@ class Solution(object):
             right = right.next.next
         
         prev.next = left.next
-        left.next = None
+        
         return head

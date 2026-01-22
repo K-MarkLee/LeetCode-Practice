@@ -9,7 +9,7 @@ class Solution(object):
         :type head: Optional[ListNode]
         :rtype: Optional[ListNode]
         """
-        if not head or not head.next:
+        if not head:
             return head
 
         prev = None

@@ -9,13 +9,12 @@ class Solution(object):
         
         prev = None
         rev = slow
-        ahead = slow.next
-
-        while ahead:
+        
+        while rev.next:
+            ahead = rev.next
             rev.next = prev
             prev = rev
             rev = ahead
-            ahead = ahead.next
         rev.next = prev
 
         while rev:

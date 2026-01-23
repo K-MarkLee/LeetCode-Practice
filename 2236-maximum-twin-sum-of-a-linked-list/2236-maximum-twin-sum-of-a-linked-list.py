@@ -19,9 +19,9 @@ class Solution(object):
         rev.next = prev
 
         while rev:
-            if result < (rev.val + head.val):
-                result = rev.val + head.val
-            # result = max(rev.val + head.val, result)
+            temp = rev.val + head.val
+            if result < temp:
+                result = temp
             rev = rev.next
             head = head.next
         

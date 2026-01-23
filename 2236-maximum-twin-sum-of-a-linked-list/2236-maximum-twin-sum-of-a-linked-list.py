@@ -1,16 +1,8 @@
-# Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
 class Solution(object):
     def pairSum(self, head):
-        """
-        :type head: Optional[ListNode]
-        :rtype: int
-        """
+
         fast = slow = head
-        result = float('-inf')
+        result = 0
         while fast:
             slow = slow.next
             fast = fast.next.next
@@ -27,7 +19,9 @@ class Solution(object):
         rev.next = prev
 
         while rev:
-            result = max(rev.val + head.val, result)
+            if result < (rev.val + head.val):
+                result = rev.val + head.val
+            # result = max(rev.val + head.val, result)
             rev = rev.next
             head = head.next
         

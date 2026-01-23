@@ -9,22 +9,15 @@ class Solution(object):
         :type head: Optional[ListNode]
         :rtype: int
         """
-        if not head or not head.next:
-            return head
-
-        if not head.next.next:
-            return head.val + head.next.val
-
-        slow = head
-        fast = head.next
-        while fast.next:
-            fast = fast.next.next
+        fast = slow = head
+        result = float('-inf')
+        while fast:
             slow = slow.next
+            fast = fast.next.next
         
-
-        prev = slow
-        rev = slow.next
-        ahead = rev.next
+        prev = None
+        rev = slow
+        ahead = slow.next
 
         while ahead:
             rev.next = prev
@@ -33,11 +26,10 @@ class Solution(object):
             ahead = ahead.next
         rev.next = prev
 
-        result = float('-inf')
-        while head != slow.next and rev:
-            result = max(result, (head.val + rev.val))
-            head = head.next
+        while rev:
+            result = max(rev.val + head.val, result)
             rev = rev.next
-
-        return result
+            head = head.next
         
+        return result
+

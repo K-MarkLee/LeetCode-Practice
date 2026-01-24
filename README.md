@@ -6,10 +6,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Tree
 |  |
 | ------- |
+| [0904-leaf-similar-trees](https://github.com/K-MarkLee/LeetCode-Practice/tree/master/0904-leaf-similar-trees) |
 | [2384-root-equals-sum-of-children](https://github.com/K-MarkLee/LeetCode-Practice/tree/master/2384-root-equals-sum-of-children) |
 ## Binary Tree
 |  |
 | ------- |
+| [0904-leaf-similar-trees](https://github.com/K-MarkLee/LeetCode-Practice/tree/master/0904-leaf-similar-trees) |
 | [2384-root-equals-sum-of-children](https://github.com/K-MarkLee/LeetCode-Practice/tree/master/2384-root-equals-sum-of-children) |
 ## Array
 |  |
@@ -165,4 +167,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0969-number-of-recent-calls](https://github.com/K-MarkLee/LeetCode-Practice/tree/master/0969-number-of-recent-calls) |
+## Depth-First Search
+|  |
+| ------- |
+| [0904-leaf-similar-trees](https://github.com/K-MarkLee/LeetCode-Practice/tree/master/0904-leaf-similar-trees) |
 <!---LeetCode Topics End-->

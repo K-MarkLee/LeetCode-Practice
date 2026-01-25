@@ -11,21 +11,21 @@ class Solution(object):
         :rtype: int
         """
         depth = 0
-        stack = [root]
+        queue = [root]
 
         if not root:
             return depth
 
-        while stack:
-            level = len(stack)
+        while queue:
+            level = len(queue)
             depth += 1
 
             for i in range(level):
-                node = stack.pop(0)
+                node = queue.pop(0)
 
                 if node.left:
-                    stack.append(node.left)
+                    queue.append(node.left)
                 if node.right:
-                    stack.append(node.right)
+                    queue.append(node.right)
         
         return depth

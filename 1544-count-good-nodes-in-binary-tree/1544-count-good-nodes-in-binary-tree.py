@@ -8,8 +8,8 @@ class Solution(object):
 
             if node.val >= maximum:
                 good += 1
+                maximum = node.val
             
-            maximum = max(maximum, node.val)
 
             if node.right:
                 stack.append((node.right, maximum))

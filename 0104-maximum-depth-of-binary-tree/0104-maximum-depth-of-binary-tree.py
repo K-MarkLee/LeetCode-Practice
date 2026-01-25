@@ -10,22 +10,7 @@ class Solution(object):
         :type root: Optional[TreeNode]
         :rtype: int
         """
-        depth = 0
-        queue = [root]
-
         if not root:
-            return depth
+            return 0
 
-        while queue:
-            level = len(queue)
-            depth += 1
-
-            for i in range(level):
-                node = queue.pop(0)
-
-                if node.left:
-                    queue.append(node.left)
-                if node.right:
-                    queue.append(node.right)
-        
-        return depth
+        return max(self.maxDepth(root.left), self.maxDepth(root.right)) + 1

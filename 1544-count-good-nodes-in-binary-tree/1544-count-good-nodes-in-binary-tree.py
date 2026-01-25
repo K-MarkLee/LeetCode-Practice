@@ -1,9 +1,5 @@
 class Solution(object):
     def goodNodes(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
         stack = [(root, root.val)]
         good = 0
 
@@ -12,10 +8,12 @@ class Solution(object):
 
             if node.val >= maximum:
                 good += 1
+            
+            maximum = max(maximum, node.val)
 
             if node.right:
-                stack.append((node.right, max(maximum, node.val)))
+                stack.append((node.right, maximum))
             if node.left:
-                stack.append((node.left, max(maximum, node.val)))
+                stack.append((node.left, maximum))
 
         return good

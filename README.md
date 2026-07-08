@@ -38,6 +38,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1791-richest-customer-wealth](https://github.com/K-MarkLee/LeetCode-Practice/tree/master/1791-richest-customer-wealth) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/K-MarkLee/LeetCode-Practice/tree/master/1798-max-number-of-k-sum-pairs) |
 | [1833-find-the-highest-altitude](https://github.com/K-MarkLee/LeetCode-Practice/tree/master/1833-find-the-highest-altitude) |
+| [2058-concatenation-of-array](https://github.com/K-MarkLee/LeetCode-Practice/tree/master/2058-concatenation-of-array) |
 | [2428-equal-row-and-column-pairs](https://github.com/K-MarkLee/LeetCode-Practice/tree/master/2428-equal-row-and-column-pairs) |
 ## Prefix Sum
 |  |
@@ -79,6 +80,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0412-fizz-buzz](https://github.com/K-MarkLee/LeetCode-Practice/tree/master/0412-fizz-buzz) |
 | [0735-asteroid-collision](https://github.com/K-MarkLee/LeetCode-Practice/tree/master/0735-asteroid-collision) |
+| [2058-concatenation-of-array](https://github.com/K-MarkLee/LeetCode-Practice/tree/master/2058-concatenation-of-array) |
 | [2428-equal-row-and-column-pairs](https://github.com/K-MarkLee/LeetCode-Practice/tree/master/2428-equal-row-and-column-pairs) |
 | [2470-removing-stars-from-a-string](https://github.com/K-MarkLee/LeetCode-Practice/tree/master/2470-removing-stars-from-a-string) |
 ## Bit Manipulation

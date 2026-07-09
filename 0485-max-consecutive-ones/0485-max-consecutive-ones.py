@@ -11,6 +11,5 @@ class Solution(object):
                 count += 1
             else:
                 count = 0
-            if count >=result:
-                result = count
+            result = max(count, result)
         return result
